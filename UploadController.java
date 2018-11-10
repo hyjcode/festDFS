@@ -27,8 +27,8 @@ public class UploadController {
             FastDFSClient fastClient = new FastDFSClient("classpath:fastDFS/fdfs_client.conf");
             //上传文件并返回上传后的文件名和路径
             String path = fastClient.uploadFile(file.getBytes(), file.getOriginalFilename(), file.getSize());
-            System.out.println("====path====" + path);
-            System.out.println("=====url====" + fileServer + path);
+            //System.out.println("====path====" + path);
+            //System.out.println("=====url====" + fileServer + path);
             return new Result(true, fileServer + path);
         } catch (Exception e) {
             e.printStackTrace();
