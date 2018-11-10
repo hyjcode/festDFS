@@ -16,7 +16,7 @@ import java.util.UUID;
 @RequestMapping("upload")
 public class UploadController {
     //案例一:传统方式上传,就是把图片上传到本服务器上
-    //步骤:
+    //步骤说明:
     //1. 添加依赖  commons-fileupload  使用的这个组件上传
     //2. 在springmvc.xml配置文件中,配置上传解析器
     //3. 在Controller中编写上传逻辑(方法)
